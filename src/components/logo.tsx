@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
-export const Logo = (className?:string) => (
+export const Logo = ({className}:{className?:string}) => (
   <Image
-    className={cn(className)}
+    className={className}
     src="/north-logo.svg"
     alt="Next.js logo"
     width={100}
